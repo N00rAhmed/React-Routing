@@ -1,3 +1,9 @@
+# Updated changes in Routes
+I have added cases of routes like `localhost:3000/user/user-id` and `localhost:3000/page?id=page-id`
+
+With these changes, you can navigate to the UserPage.js by visiting `localhost:3000/user/123`, where 123 can be replaced with any number and similarly, you can visit Page.js by accessing `localhost:3000/page?id=456`, where 456 can be replaced with any number.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

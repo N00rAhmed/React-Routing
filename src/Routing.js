@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import SecondPage from './SecondPage';
+import UserPage from './UserPage';
+import Page from './Page';
 
 function Routing() {
   return (
@@ -11,10 +13,19 @@ function Routing() {
             path="/"
             element={ <App /> }
         />
-        {/* The next line is very important for the Navigate component to work */}
+
         <Route
             path="/secondPage"
             element={ <SecondPage /> }
+        />
+        <Route 
+          path="/user/:userId" 
+          element={<UserPage />} 
+        />
+
+        <Route 
+          path="/page" 
+          element={<Page />} 
         />
 
         </Routes>
